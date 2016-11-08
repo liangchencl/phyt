@@ -11,7 +11,15 @@
     "pages/account/grzx/password/changePassword/changePassword",
     "pages/account/grzx/password/changeSafety/changeSafety",
     "pages/account/grzx/password/findSafety/findSafety",
-    "pages/account/grzx/password/findSafetys/findSafetys"
+    "pages/account/grzx/password/findSafetys/findSafetys",
+    "pages/account/asset/asset",
+    "pages/account/recharge/recharge",
+    "pages/account/extract/extract",
+    "pages/account/invest/invest",
+    "pages/account/refund/refund",
+    "pages/account/incomeExpense/incomeExpense",
+    "pages/account/userShare/userShare",
+    "pages/account/cardBox/cardBox"
   ],
   "window":{
     "backgroundTextStyle":"light",
