@@ -1,3 +1,7 @@
-<view class="tz">
-{{text}}
+<view class="tz_bd">
+    <view class="tz_list">
+        <block wx:for="{{tzList}}">
+            <view>{{item.deadlineStr}}</view>
+        </block>
+    </view>
 </view>

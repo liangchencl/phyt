@@ -1,1 +1,23 @@
-<view>{{text}}</view>
+<view class="banner">
+    <image src="../../../images/account/yaoqin_banner.jpg"></image>
+</view>
+
+<view class="title">
+    <view class="left">
+        累计佣金<text> 0.00 </text>元
+    </view>
+    <view class="right">
+        邀请好友<text> 3 </text>人
+    </view>
+</view>
+
+<view class="content">
+    <view class="content_top">
+        <view class="left">
+            <text>李蕾</text>
+        </view>
+        <view class="right">
+            <navigator url="">活动规则</navigator>
+        </view>
+    </view>
+</view>
