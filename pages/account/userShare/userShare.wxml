@@ -19,5 +19,19 @@
         <view class="right">
             <navigator url="">活动规则</navigator>
         </view>
+        <view class="content_topLine">
+            <image src="../../../images/account/yaoqin_line.jpg"></image>
+        </view>
+
+        <view class="ewm">
+            <image src="../../../images/account/fwh.png"></image>
+            <view>
+                老司机，把真金分享给更多的人吧~
+            </view>
+        </view>
     </view>
+</view>
+
+<view class="grzx_btn">
+    <button size="default" type="primary" bindtap="change">立即寻找取金人</button>
 </view>
