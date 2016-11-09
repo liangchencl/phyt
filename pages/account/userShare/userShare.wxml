@@ -17,7 +17,7 @@
             <text>李蕾</text>
         </view>
         <view class="right">
-            <navigator url="">活动规则</navigator>
+            <navigator url="userSharerule/userSharerule">活动规则</navigator>
         </view>
         <view class="content_topLine">
             <image src="../../../images/account/yaoqin_line.jpg"></image>

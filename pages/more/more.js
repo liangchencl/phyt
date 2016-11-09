@@ -9,7 +9,6 @@ Page({
         ];
         
         var id = e.currentTarget.id , data = {};
-        console.log(id);
         for(var i=0,len=type.length;i<len;i++){
             data[type[i]+"Show"] = false;
         }
