@@ -2,10 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/tz/tz",
-    "pages/account/account",
     "pages/more/more",
     "pages/more/news/news",
     "pages/more/article/ptgg/ptgg",
+    "pages/account/account",
     "pages/account/grzx/grzx",
     "pages/account/grzx/password/password",
     "pages/account/grzx/password/changePassword/changePassword",
@@ -18,8 +18,11 @@
     "pages/account/invest/invest",
     "pages/account/refund/refund",
     "pages/account/incomeExpense/incomeExpense",
-    "pages/account/userShare/userShare",
     "pages/account/cardBox/cardBox",
+    "pages/account/cardBox/hbq/hbq",
+    "pages/account/cardBox/jxq/jxq",
+    "pages/account/cardBox/tyj/tyj",
+    "pages/account/userShare/userShare",
     "pages/account/userShare/userSharerule/userSharerule"
   ],
   "window":{
