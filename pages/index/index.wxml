@@ -5,7 +5,7 @@
         <block wx:for="{{imgUrl}}">
             <swiper-item>
                 <view class="swiper_img">
-                    <image src="{{item}}"></image>
+                    <navigator url="{{item.url}}"><image src="{{item.img}}"></image></navigator>
                 </view>
             </swiper-item>
         </block>
@@ -15,7 +15,7 @@
 <view class="index_icon">
     <view class="index_icon_list">
         <view><image src="../../images/index/index_01.png"></image><text>新人有礼</text></view>
-        <view><image src="../../images/index/index_02.png"></image><text>邀请好友</text></view>
+        <view><navigator url="../account/userShare/userShare"><image src="../../images/index/index_02.png"></image><text>邀请好友</text></navigator></view>
         <view><image src="../../images/index/index_03.png"></image><text>安全保障</text></view>
     </view>
 </view>
@@ -52,7 +52,8 @@
         <view class="index_con_right">
             <view class="index_con_rightdata"><text>2</text>个月期限</view>
             <view>
-                <progress percent="60" show-info color="#ff723f" />
+                <progress percent="60" show-info active color="#ff723f" />
+                <!--<progress percent="50" show-info active  color="#ff723f" />-->
             </view>
         </view>
         <view class="index_tz_btn">

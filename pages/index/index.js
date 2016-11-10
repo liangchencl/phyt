@@ -2,9 +2,9 @@ var app =getApp()
 Page({
   data:{
     imgUrl:[
-        "https://www.phyt88.com/phyt/wechat/images/new_slider2.jpg",
-        "https://www.phyt88.com/phyt/wechat/images/new_slider1.jpg",
-        "https://www.phyt88.com/phyt/wechat/images/new_slider1.png"
+        {img:"https://www.phyt88.com/phyt/wechat/images/new_slider2.jpg",url:"http://www.baidu.com"},
+        {img:"https://www.phyt88.com/phyt/wechat/images/new_slider1.jpg",url:"http://www.baidu.com"},
+        {img:"https://www.phyt88.com/phyt/wechat/images/new_slider1.png",url:"http://www.baidu.com"}
     ]
   },
   onLoad:function(options){
