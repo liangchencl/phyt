@@ -6,6 +6,8 @@
     "pages/more/news/news",
     "pages/more/article/ptgg/ptgg",
     "pages/account/account",
+    "pages/account/userShare/userShare",
+    "pages/account/userShare/userSharerule/userSharerule",
     "pages/account/grzx/grzx",
     "pages/account/grzx/password/password",
     "pages/account/grzx/password/changePassword/changePassword",
@@ -20,10 +22,11 @@
     "pages/account/incomeExpense/incomeExpense",
     "pages/account/cardBox/cardBox",
     "pages/account/cardBox/hbq/hbq",
+    "pages/account/cardBox/hbq/hbqRule/hbqRule",
     "pages/account/cardBox/jxq/jxq",
-    "pages/account/cardBox/tyj/tyj",
-    "pages/account/userShare/userShare",
-    "pages/account/userShare/userSharerule/userSharerule"
+    "pages/account/cardBox/jxq/jxqRule/jxqRule",
+    "pages/account/cardBox/tyj/tyj"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
