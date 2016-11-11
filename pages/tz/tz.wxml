@@ -23,7 +23,7 @@
                             <view>800000元</view>
                         </view>
                         <view class="right_r">
-                            <navigator url="">开始投资</navigator>
+                            <navigator url="invest/invest">开始投资</navigator>
                         </view>
                     </view>
                     <view class="progress">
@@ -47,7 +47,7 @@
                             <view>800000元</view>
                         </view>
                         <view class="right_r">
-                            <navigator url="">开始投资</navigator>
+                            <navigator url="invest/invest">开始投资</navigator>
                         </view>
                     </view>
                     <view class="progress">
@@ -71,7 +71,7 @@
                             <view>800000元</view>
                         </view>
                         <view class="right_r">
-                            <navigator url="">开始投资</navigator>
+                            <navigator url="invest/invest">开始投资</navigator>
                         </view>
                     </view>
                     <view class="progress">
