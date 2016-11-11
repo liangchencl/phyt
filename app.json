@@ -1,10 +1,15 @@
 {
   "pages":[
     "pages/index/index",
+
     "pages/tz/tz",
+    
     "pages/more/more",
     "pages/more/news/news",
     "pages/more/article/ptgg/ptgg",
+
+    "pages/activity/activity",
+
     "pages/account/account",
     "pages/account/userShare/userShare",
     "pages/account/userShare/userSharerule/userSharerule",
@@ -26,6 +31,8 @@
     "pages/account/cardBox/jxq/jxq",
     "pages/account/cardBox/jxq/jxqRule/jxqRule",
     "pages/account/cardBox/tyj/tyj"
+
+    
     
   ],
   "window":{
