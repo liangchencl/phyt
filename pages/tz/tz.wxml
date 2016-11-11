@@ -10,7 +10,7 @@
 <!-- 商行贷 -->
     <view class="tab_list shd_list {{shdShow ? 'show' : 'hide'}}">
         <view class="shd_list">
-            <view class="tab_title">商行贷1607151系列之1 <text class="bao">保</text><text class="fan">返利2.6%</text></view>
+            <navigator url="project/project"><view class="tab_title">商行贷1607151系列之1 <text class="bao">保</text><text class="fan">返利2.6%</text></view></navigator>
             <view class="tab_con">
                 <view class="left">
                     <text>15.0</text>%
@@ -34,7 +34,7 @@
         </view>
 
         <view class="shd_list">
-            <view class="tab_title">商行贷1607151系列之1 <text class="bao">保</text><text class="fan">返利2.6%</text></view>
+            <navigator url="project/project"><view class="tab_title">商行贷1607151系列之1 <text class="bao">保</text><text class="fan">返利2.6%</text></view></navigator>
             <view class="tab_con">
                 <view class="left">
                     <text>15.0</text>%
@@ -58,7 +58,7 @@
         </view>
 
         <view class="shd_list">
-            <view class="tab_title">商行贷1607151系列之1 <text class="bao">保</text><text class="fan">返利2.6%</text></view>
+            <navigator url="project/project"><view class="tab_title">商行贷1607151系列之1 <text class="bao">保</text><text class="fan">返利2.6%</text></view></navigator>
             <view class="tab_con">
                 <view class="left">
                     <text>15.0</text>%

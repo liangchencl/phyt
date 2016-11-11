@@ -3,6 +3,7 @@
     "pages/index/index",
 
     "pages/tz/tz",
+    "pages/tz/project/project",
     
     "pages/more/more",
     "pages/more/news/news",
