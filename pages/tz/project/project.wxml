@@ -108,7 +108,20 @@
         </view>
 
         <view class="pro_con_tab {{tab1Show ? 'tab_con_show' : 'tab_con_hide'}}">
-            2
+            <view class="record">
+                <view class="record_title">
+                    <text class="record_left">投资人</text>
+                    <text class="record_center">投资时间</text>
+                    <text class="record_right">金额</text>
+                </view>
+                <view class="record_con">
+                    <view wx:for="{{investList}}">
+                        <text class="record_left">{{item.userName}}</text>
+                        <text class="record_center">2016-11-11 15:08:45</text>
+                        <text class="record_right">{{item.money}}</text>
+                    </view>
+                </view>
+            </view>
         </view>
 
         <view class="pro_con_tab {{tab2Show ? 'tab_con_show' : 'tab_con_hide'}}">

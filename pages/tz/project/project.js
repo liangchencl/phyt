@@ -4,6 +4,24 @@ Page({
     "text":"投资详情",
     tab0Show:true
   },
+  onLoad:function(e){
+    var that = this;
+    //   console.log(that);
+      wx.request({
+      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?sid=21337&pageSize=10&pageIndex=1',
+      data:"",
+      method:"POST",
+      header: {
+          'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data.rows);
+        that.setData({
+            investList:res.data.rows,
+          })  
+      }
+    })
+  },
   change:function(e){
       var type = [
           "tab0","tab1","tab2"
