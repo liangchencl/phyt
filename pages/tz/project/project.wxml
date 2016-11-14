@@ -25,13 +25,13 @@
                 剩余金额：<text>68402500</text>
             </view>
         </view>
-        <view class="">
+        <view>
             回款方式：<text>按月付息</text>
         </view>
         <view >
             起 息 日：投资后下一日
         </view>
-        <view >
+        <view>
             担保公司：金鼎投资担保有限公司
         </view>
         <view >
@@ -39,3 +39,7 @@
         </view>
     </view>
 </view>
+
+<view class=""></view>
+
+
