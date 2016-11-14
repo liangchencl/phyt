@@ -9,7 +9,7 @@ Page({
     //   console.log(that);
       wx.request({
       url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?sid=21337&pageSize=10&pageIndex=1',
-      data:"",
+      data:{},
       method:"POST",
       header: {
           'Content-Type': 'application/json'
