@@ -15,9 +15,22 @@
 .content .content_top .left {display: inline-block;width: 50%;}
 .content .content_top .right {display: inline-block;width: 50%;}
 
+.project_bd {padding-bottom: 200rpx;}
+
+.pro_list view {display: inline-block;width: 33.333%;text-align: center;font-size: 32rpx;border-top: 2rpx solid #ccc;border-bottom: 4rpx solid #ccc;line-height: 2.4em;background: #fff;box-sizing: border-box;}
+.pro_list view.tab1 {border-left: 2rpx solid #ccc;border-right: 2rpx solid #ccc;}
+.pro_list view.tab_info_show {background: #4aafe2;color: #fff;}
+
+.pro_item {margin-top: 20rpx;}
+.item_title {background: #fff;border-bottom: 2rpx solid #ccc;font-size: 34rpx;line-height: 2.2em;padding:0 30rpx; }
+.item_title text {border-bottom: 2rpx solid #4aafe2;padding-bottom: 20rpx;}
+.item_con {font-size: 26rpx;padding: 30rpx;line-height: 1.8em;}
+.pro_item .item_con .h4 {font-size: 36rpx;margin-top: 16rpx;}
 
 
+.tab_con_show {display: block;}
+.tab_con_hide {display: none;}
+.first_con_show {display: block;}
+.first_con_hide {display: none;}
 
-
-
-
+.footer_btn button {position: fixed;bottom: 0;left: 0;width: 100%;background: #ff5304;color: #fff;}
