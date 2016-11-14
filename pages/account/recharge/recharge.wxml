@@ -32,6 +32,6 @@
 
 <view class="recharge_btn">
     <view>为保障安全,充值提现所绑定的银行卡不可更换。</view>
-    <button size="default" type="primary" bindtap="change">立即充值</button>
+    <button size="default" type="primary" hover-class="none">立即充值</button>
 </view>
 

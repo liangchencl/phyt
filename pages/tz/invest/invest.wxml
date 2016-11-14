@@ -2,7 +2,7 @@
     <view class="tz_list">
         可用余额：<text>7829994.15</text> 元
         <view class="right">
-            <navigator url="">去充值</navigator>
+            <navigator url="../../account/recharge/recharge">去充值</navigator>
         </view>
     </view>
 
