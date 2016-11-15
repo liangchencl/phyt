@@ -14,9 +14,9 @@
 
 <view class="index_icon">
     <view class="index_icon_list">
-        <view><image src="../../images/index/index_01.png"></image><text>新人有礼</text></view>
+        <view><navigator url="newUser/newUser"><image src="../../images/index/index_01.png"></image><text>新人有礼</text></navigator></view>
         <view><navigator url="../account/userShare/userShare"><image src="../../images/index/index_02.png"></image><text>邀请好友</text></navigator></view>
-        <view><image src="../../images/index/index_03.png"></image><text>安全保障</text></view>
+        <view><navigator url="safety/safety"><image src="../../images/index/index_03.png"></image><text>安全保障</text></navigator></view>
     </view>
 </view>
 
