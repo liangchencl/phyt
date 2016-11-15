@@ -117,7 +117,7 @@
                 <view class="record_con">
                     <view wx:for="{{investList}}">
                         <text class="record_left">{{item.userName}}</text>
-                        <text class="record_center">2016-11-11 15:08:45</text>
+                        <text class="record_center">{{item.time}}</text>
                         <text class="record_right">{{item.money}}</text>
                     </view>
                 </view>

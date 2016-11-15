@@ -4,18 +4,18 @@ Page({
     "text":"投资详情",
     tab0Show:true
   },
-  onLoad:function(e){
+  onLoad:function(options){
     var that = this;
-    //   console.log(that);
+      console.log(options + "1321");
       wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?sid=21337&pageSize=15&pageIndex=1',
-      data:{},
+      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?pageSize=15&pageIndex=1&sid=21600',
+      data: "sid=" + options.sid,
       method:"POST",
       header: {
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        console.log(res.data.rows);
+        // console.log(res.data.rows);
         that.setData({
             investList:res.data.rows,
           })  
@@ -48,7 +48,7 @@ Page({
     var data = {};
     data[id + "Show" ] = !this.data[id + "Show" ];
     this.setData(data)
-    console.log(data)
+    // console.log(data)
 
   }
 })
