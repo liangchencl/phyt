@@ -19,7 +19,7 @@
                 <view class="right">
                     <view class="clear">
                         <view class="right_l">
-                            <text>{{item.deadlineStr}}</text>
+                            <text>{{item.deadlineStr}}</text>个月
                             <view>{{item.amount}}</view>
                         </view>
                         <view class="right_r">
@@ -27,7 +27,7 @@
                         </view>
                     </view>
                     <view class="progress">
-                        <progress percent="{{item.raisedAmount / item.amount * 100}}" show-info active color="#ff723f" />
+                        <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                     </view>
                 </view>
             </view>
@@ -94,7 +94,7 @@
                 <view class="right">
                     <view class="clear">
                         <view class="right_l">
-                            <text>{{item.deadlineStr}}</text>
+                            <text>{{item.deadlineStr}}</text>个月
                             <view>{{item.amount}}</view>
                         </view>
                         <view class="right_r">
@@ -102,7 +102,7 @@
                         </view>
                     </view>
                     <view class="progress">
-                        <progress percent="{{item.raisedAmount / item.amount * 100}}" show-info active color="#ff723f" />
+                        <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                     </view>
                 </view>
             </view>
@@ -169,7 +169,7 @@
                 <view class="right">
                     <view class="clear">
                         <view class="right_l">
-                            <text>{{item.deadlineStr}}</text>
+                            <text>{{item.deadlineStr}}</text>个月
                             <view>{{item.amount}}</view>
                         </view>
                         <view class="right_r">
@@ -177,7 +177,7 @@
                         </view>
                     </view>
                     <view class="progress">
-                        <progress percent="{{item.raisedAmount / item.amount * 100}}" show-info active color="#ff723f" />
+                        <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                     </view>
                 </view>
             </view>

@@ -2,7 +2,7 @@
 <view wx:for="{{shdList}}">
     <view class="project_hd" wx:if="{{item.id == sid}}">
         <view class="title">
-            {{item.conSn}}系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
+            商行贷{{item.conSn}}系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
         </view>
         
         <view class="top">
@@ -13,7 +13,7 @@
             <view class="right">
                 {{item.deadlineStr}}<text></text>
                 <view>
-                    <progress percent="{{item.raisedAmount / item.amount * 100}}" show-info active color="#ff723f" />
+                    <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                 </view>
             </view>
         </view>
