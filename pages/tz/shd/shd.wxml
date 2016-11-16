@@ -4,7 +4,7 @@
         <view class="title">
             {{item.conSn}}系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
         </view>
-
+        
         <view class="top">
             <view class="left">
                 <view class="percent">{{item.rate}}<text>%</text></view>
@@ -47,7 +47,7 @@
     </view>
 </view>
 
-<view class="project_hd">
+<view class="project_bd">
     <view class="pro_list">
         <view class="tab tab0 {{tab0Show ? 'tab_info_show' : ''}}" id="tab0" bindtap="change">项目详情</view>
         <view class="tab tab1 {{tab1Show ? 'tab_info_show' : ''}}" id="tab1" bindtap="change">投资记录</view>
@@ -152,6 +152,7 @@
 
     </view>
 </view>
+
 
 
 <view class="footer_btn">

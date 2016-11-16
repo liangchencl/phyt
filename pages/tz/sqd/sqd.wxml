@@ -47,7 +47,7 @@
     </view>
 </view>
 
-<view class="project_hd">
+<view class="project_bd">
     <view class="pro_list">
         <view class="tab tab0 {{tab0Show ? 'tab_info_show' : ''}}" id="tab0" bindtap="change">项目详情</view>
         <view class="tab tab1 {{tab1Show ? 'tab_info_show' : ''}}" id="tab1" bindtap="change">投资记录</view>
@@ -147,9 +147,7 @@
                     <view>核心企业实时掌握上下游产品生产及资金结转，确保借款需求及企业真实安全可靠。</view>
                 </view>
             </view>
-
         </view>
-
     </view>
 </view>
 

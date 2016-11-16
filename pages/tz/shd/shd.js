@@ -19,7 +19,7 @@ Page({
         that.setData({
             investList:res.data.rows,
             sid : options.sid
-          })  
+          })
       }
     }),
     // 商行贷
@@ -31,40 +31,15 @@ Page({
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        console.log(res.data.rows);
+        // console.log(res.data.rows);
+        for(var i=0,num=res.data.rows.length;i<num;i++){
+          // console.log(typeof(res.data.rows[i].amount))
+          // 给json数据里面的的 amount重新取值，其实就是利用字符串截取了整数部分
+          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6)
+        }
         that.setData({
             shdList:res.data.rows,
           })  
-      }
-    }),
-    // 商抵贷
-    wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_small_section_list.jso?pageSize=6&pageIndex=1',
-      data:"",
-      method:"POST",
-      header: {
-          'Content-Type': 'application/json'
-      },
-      success: function(res) {
-        console.log(res.data.rows);
-        that.setData({
-            sddList:res.data.rows,
-          })
-      }
-    }),
-    // 商企贷
-    wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_brand_section_list.jso?pageSize=6&pageIndex=1',
-      data:"",
-      method:"POST",
-      header: {
-          'Content-Type': 'application/json'
-      },
-      success: function(res) {
-        console.log(res.data.rows);
-        that.setData({
-            sqdList:res.data.rows,
-          })
       }
     })
   },
