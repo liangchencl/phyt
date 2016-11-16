@@ -5,7 +5,9 @@
     "pages/index/safety/safety",
 
     "pages/tz/tz",
-    "pages/tz/project/project",
+    "pages/tz/shd/shd",
+    "pages/tz/sdd/sdd",
+    "pages/tz/sqd/sqd",
     "pages/tz/invest/invest",
     
     "pages/more/more",

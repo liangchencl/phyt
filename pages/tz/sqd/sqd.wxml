@@ -1,5 +1,5 @@
 <!--商行贷-->
-<view wx:for="{{shdList}}">
+<view wx:for="{{sqdList}}">
     <view class="project_hd" wx:if="{{item.id == sid}}">
         <view class="title">
             {{item.conSn}}系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
@@ -13,7 +13,7 @@
             <view class="right">
                 {{item.deadlineStr}}<text></text>
                 <view>
-                    <progress percent="60" show-info active color="#ff723f" />
+                    <progress percent="{{item.raisedAmount / item.amount * 100}}" show-info active color="#ff723f" />
                 </view>
             </view>
         </view>
@@ -24,7 +24,7 @@
                     融资金额：<text>{{item.amount}}</text>
                 </view>
                 <view class="right">
-                    剩余金额：<text>{{item.raisedAmount}}</text>
+                    剩余金额：<text>{{item.amount - item.raisedAmount}}</text>
                 </view>
             </view>
             <view>
