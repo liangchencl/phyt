@@ -6,9 +6,9 @@ Page({
   },
   onLoad:function(options){
     var that = this;
-      console.log(options + "1321");
+      // console.log(options);
       wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?pageSize=15&pageIndex=1&sid=21600',
+      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?pageSize=15&pageIndex=1&sid='+options.sid,
       data: "sid=" + options.sid,
       method:"POST",
       header: {
@@ -18,6 +18,22 @@ Page({
         // console.log(res.data.rows);
         that.setData({
             investList:res.data.rows,
+            sid : options.sid
+          })  
+      }
+    }),
+    // 商行贷
+    wx.request({
+      url: 'https://www.phyt88.com/v2/project/obtain_big_section_list.jso?pageSize=6&pageIndex=1',
+      data: "",
+      method:"POST",
+      header: {
+          'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data.rows);
+        that.setData({
+            investShd:res.data.rows,
           })  
       }
     })

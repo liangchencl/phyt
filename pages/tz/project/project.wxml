@@ -1,44 +1,52 @@
-<view class="project_hd">
-    <view class="title">
-        商行贷1607151系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
-    </view>
 
-    <view class="top">
-        <view class="left">
-            <view class="percent">15<text>%</text></view>
-            <view class="yield">预期年化收益率</view>
+<view wx:for="{{investShd}}">
+    <view class="project_hd" wx:if="{{item.id == sid}}">
+        <view class="title">
+            {{item.conSn}}系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
         </view>
-        <view class="right">
-            8<text>个月</text>
-            <view>
-                <progress percent="60" show-info active color="#ff723f" />
-            </view>
-        </view>
-    </view>
 
-    <view class="content">
-        <view class="content_top">
+        <view class="top">
             <view class="left">
-                融资金额：<text>80000000</text>
+                <view class="percent">{{item.rate}}<text>%</text></view>
+                <view class="yield">预期年化收益率</view>
             </view>
             <view class="right">
-                剩余金额：<text>68402500</text>
+                {{item.deadlineStr}}<text></text>
+                <view>
+                    <progress percent="60" show-info active color="#ff723f" />
+                </view>
             </view>
         </view>
-        <view>
-            回款方式：<text>按月付息</text>
-        </view>
-        <view >
-            起 息 日：投资后下一日
-        </view>
-        <view>
-            担保公司：金鼎投资担保有限公司
-        </view>
-        <view >
-            额外收益：<text>返利2.60%(红包)+</text>积分
+
+        <view class="content">
+            <view class="content_top">
+                <view class="left">
+                    融资金额：<text>{{item.amount}}</text>
+                </view>
+                <view class="right">
+                    剩余金额：<text>{{item.raisedAmount}}</text>
+                </view>
+            </view>
+            <view>
+                回款方式：<text>按月付息</text>
+            </view>
+            <view >
+                起 息 日：投资后下一日
+            </view>
+            <view>
+                担保公司：金鼎投资担保有限公司
+            </view>
+            <!--判断积分-->
+            <view wx:if="{{item.reward == 0}}" >
+                额外收益：积分
+            </view>
+            <view wx:else>
+                额外收益：<text>返利{{item.reward}}(红包)+</text>积分
+            </view>
         </view>
     </view>
 </view>
+
 
 <view class="project_bd">
     <view class="pro_list">
