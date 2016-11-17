@@ -15,7 +15,10 @@ Page({
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        // console.log(res.data.rows);
+        var len=res.data.rows.length;
+        for(var i=0;i<len;i++){
+          res.data.rows[i].time = app.FormateDate(res.data.rows[i].time,'Y-m-d h:m:s')
+        }
         that.setData({
             investList:res.data.rows,
             sid : options.sid

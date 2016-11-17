@@ -8,6 +8,7 @@ Page({
     var that = this;
     app.getUserInfo(function(userInfo){
       //更新数据
+      console.log(userInfo)
       that.setData({
         userInfo:userInfo
       })

@@ -4,7 +4,9 @@ Page({
     "text":"投资详情",
     tab0Show:true
   },
+  
   onLoad:function(options){
+
     var that = this;
       // console.log(options);
       wx.request({
@@ -15,7 +17,10 @@ Page({
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        // console.log(res.data.rows);
+        var len=res.data.rows.length;
+        for(var i=0;i<len;i++){
+          res.data.rows[i].time = app.FormateDate(res.data.rows[i].time,'Y-m-d h:m:s')
+        }
         that.setData({
             investList:res.data.rows,
             sid : options.sid
@@ -31,9 +36,7 @@ Page({
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        // console.log(res.data.rows);
         for(var i=0,num=res.data.rows.length;i<num;i++){
-          // console.log(typeof(res.data.rows[i].amount))
           // 给json数据里面的的 amount重新取值，其实就是利用字符串截取了整数部分
           res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
           res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6);

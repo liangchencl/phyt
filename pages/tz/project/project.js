@@ -4,6 +4,9 @@ Page({
     "text":"投资详情",
     tab0Show:true
   },
+
+  
+
   onLoad:function(options){
     var that = this;
       // console.log(options);
@@ -16,6 +19,7 @@ Page({
       },
       success: function(res) {
         // console.log(res.data.rows);
+        
         that.setData({
             investList:res.data.rows,
             sid : options.sid
@@ -32,6 +36,11 @@ Page({
       },
       success: function(res) {
         console.log(res.data.rows);
+        // for(var i=0,len=res.data.rows.lenth;i<len;i++){
+          
+        //   res.data.rows[i].time = FormateDate(res.data.rows[i].time,'Y-m-d h:m:s')
+        // }
+        
         that.setData({
             shdList:res.data.rows,
           })  
@@ -46,7 +55,7 @@ Page({
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        console.log(res.data.rows);
+        // console.log(res.data.rows);
         that.setData({
             sddList:res.data.rows,
           })
@@ -61,13 +70,15 @@ Page({
           'Content-Type': 'application/json'
       },
       success: function(res) {
-        console.log(res.data.rows);
+        // console.log(res.data.rows);
         that.setData({
             sqdList:res.data.rows,
           })
       }
     })
+    
   },
+  
   change:function(e){
       var type = [
           "tab0","tab1","tab2"
