@@ -2,7 +2,7 @@
 .banner_top {padding: 0 40rpx;}
 .banner_left {display: inline-block;}
 .banner_left navigator {display: inline-block;float: left;}
-.banner_left navigator image {width: 100rpx;height: 100rpx;margin-right: 20rpx;}
+.banner_left navigator image {width: 100rpx;height: 100rpx;margin-right: 20rpx;border-radius: 50%;}
 .banner_left .banner_user {float: left;font-size: 28rpx;line-height: 1.5em;padding-top: 14rpx;color: #fff;}
 
 .banner_right {display: inline-block;float: right;}
@@ -28,10 +28,3 @@
 .wdzh_bottom_content {font-size: 32rpx;display: inline-block;width: 90%;border-bottom: 2rpx solid #ccc;padding-bottom: 16rpx;}
 .wdzh_bottom_content image {width: 30rpx;height: 30rpx;float: right;margin-right: 40rpx;}
 .no_bottom {border-bottom: none;padding-bottom: 30rpx;}
-
-
-
-
-
-
-
