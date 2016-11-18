@@ -11,9 +11,36 @@
 </view>
 
 <view class="invest_bd">
-    <view class="invest_list">
-        <block wx:for="{{investList}}" wx:key="index">
-            <view bindtap="change">{{item.money}}</view>
-        </block>
+    <view class="bd_title">
+        <view class="bd_left">项目名称</view>
+        <view class="bd_center">投资金额(元)</view>
+        <view class="bd_right">回款金额(元)</view>
+    </view>
+    <view class="bd_content">
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
     </view>
 </view>

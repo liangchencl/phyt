@@ -29,6 +29,7 @@
     "pages/account/recharge/recharge",
     "pages/account/extract/extract",
     "pages/account/invest/invest",
+    "pages/account/invest/repayment/repayment",
     "pages/account/refund/refund",
     "pages/account/incomeExpense/incomeExpense",
     "pages/account/cardBox/cardBox",
