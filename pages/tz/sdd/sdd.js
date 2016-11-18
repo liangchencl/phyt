@@ -42,7 +42,7 @@ Page({
           res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
           res.data.rows[i].last = res.data.rows[i].conSn.substring(-1,1);
           res.data.rows[i].percent = ((res.data.rows[i].raisedAmount / res.data.rows[i].amount)*100).toFixed(1);
-          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6)
+          res.data.rows[i].amount = parseInt(res.data.rows[i].amount);
         }
         that.setData({
             sddList:res.data.rows,

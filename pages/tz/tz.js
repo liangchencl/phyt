@@ -25,7 +25,7 @@ Page({
           // 给json数据里面的的 amount重新取值，其实就是利用字符串截取了整数部分
           res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
           res.data.rows[i].last = res.data.rows[i].conSn.substring(-1,1);
-          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6);
+          res.data.rows[i].amount = parseInt(res.data.rows[i].amount);;
           if(res.data.rows[i].deadlineStr.substring(0,2) > 9 ){
             res.data.rows[i].deadlineStr = res.data.rows[i].deadlineStr.substring(0,2);
           }else{
@@ -53,7 +53,7 @@ Page({
           // 给json数据里面的的 amount重新取值，其实就是利用字符串截取了整数部分
           res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
           res.data.rows[i].last = res.data.rows[i].conSn.substring(-1,1);
-          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6);
+          res.data.rows[i].amount = parseInt(res.data.rows[i].amount);
           if(res.data.rows[i].deadlineStr.substring(0,2) > 9 ){
             res.data.rows[i].deadlineStr = res.data.rows[i].deadlineStr.substring(0,2);
           }else{
@@ -81,7 +81,7 @@ Page({
           // 给json数据里面的的 amount重新取值，其实就是利用字符串截取了整数部分
           res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
           res.data.rows[i].last = res.data.rows[i].conSn.substring(-1,1);
-          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6);
+          res.data.rows[i].amount = parseInt(res.data.rows[i].amount);
           if(res.data.rows[i].deadlineStr.substring(0,2) > 9 ){
             res.data.rows[i].deadlineStr = res.data.rows[i].deadlineStr.substring(0,2);
           }else{

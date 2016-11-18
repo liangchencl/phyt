@@ -16,6 +16,21 @@ Page({
       },
       success: function(res) {
         // console.log(res.data.investRecordOutput.rows);
+        var len = res.data.investRecordOutput.rows.length;
+        console.log(len)
+        
+        for(var i=0;i<len;i++){
+          // console.log(res.data.investRecordOutput.rows[i].money);
+          res.data.investRecordOutput.rows[i].money = parseInt(res.data.investRecordOutput.rows[i].money)
+        }
+
+        // for(var i=0,num=res.data.rows.length;i<num;i++){
+        //   res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
+        //   res.data.rows[i].last = res.data.rows[i].conSn.substring(-1,1);
+        //   res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6);
+        //   res.data.rows[i].percent = ((res.data.rows[i].raisedAmount / res.data.rows[i].amount)*100).toFixed(1)
+        // }
+
         that.setData({
             investList:res.data.investRecordOutput.rows,
           })  
