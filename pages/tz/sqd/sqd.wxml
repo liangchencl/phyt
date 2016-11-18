@@ -13,7 +13,7 @@
             <view class="right">
                 {{item.deadlineStr}}<text></text>
                 <view>
-                    <progress percent="{{item.raisedAmount / item.amount * 100}}" show-info active color="#ff723f" />
+                    <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                 </view>
             </view>
         </view>

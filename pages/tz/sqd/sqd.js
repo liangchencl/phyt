@@ -39,7 +39,8 @@ Page({
           console.log(typeof(res.data.rows[i].amount))
           // 给json数据里面的的 amount重新取值，其实就是利用字符串截取了整数部分
           res.data.rows[i].conSn = res.data.rows[i].conSn.substring(3,10);
-          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6)
+          res.data.rows[i].amount = res.data.rows[i].amount.substring(-1,6);
+          res.data.rows[i].percent = ((res.data.rows[i].raisedAmount / res.data.rows[i].amount)*100).toFixed(1)
         }
         that.setData({
             sqdList:res.data.rows,

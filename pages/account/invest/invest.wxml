@@ -12,8 +12,8 @@
 
 <view class="invest_bd">
     <view class="invest_list">
-        <block wx:for="{{investList}}">
-            <view>{{item.money}}</view>
+        <block wx:for="{{investList}}" wx:key="index">
+            <view bindtap="change">{{index}}--{{item.money}}</view>
         </block>
     </view>
 </view>
