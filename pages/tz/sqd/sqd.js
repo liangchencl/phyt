@@ -1,4 +1,4 @@
-var app =getApp()
+var s_data = require("../../../utils/FormateDate.js")
 Page({
   data:{
     "text":"投资详情",
@@ -17,7 +17,7 @@ Page({
       success: function(res) {
         var len=res.data.rows.length;
         for(var i=0;i<len;i++){
-          res.data.rows[i].time = app.FormateDate(res.data.rows[i].time,'Y-m-d h:m:s')
+          res.data.rows[i].time = s_data.FormateDate(res.data.rows[i].time,'Y-m-d h:m:s')
         }
         that.setData({
             investList:res.data.rows,

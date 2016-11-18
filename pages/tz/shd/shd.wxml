@@ -2,7 +2,7 @@
 <view wx:for="{{shdList}}">
     <view class="project_hd" wx:if="{{item.id == sid}}">
         <view class="title">
-            商行贷{{item.conSn}}系列之1<text class="bao">保</text><text class="fan">返利2.60%</text>
+            商行贷{{item.conSn}}系列之{{item.last}}<text class="bao">保</text><text class="fan">返利2.60%</text>
         </view>
         
         <view class="top">
