@@ -61,7 +61,9 @@
             </view>
         </view>
         <view class="index_tz_btn">
-            <button type="primary" hover-class="red"> 立即投资 </button>
+            <navigator url="../tz/invest/invest">
+                <button type="primary" hover-class="red">立即投资</button>
+            </navigator>
         </view>
         <view class="index_tz_db">
             <image src="../../images/index/index_dp.png"></image>国资担保公司全面担保
