@@ -1,4 +1,4 @@
-.banner {background: url(../../images/account/zhsy_new_bg.jpg) center center no-repeat;padding: 40rpx 0 0 0;background-size: 100%;}
+.banner {background: url(https://www.phyt88.com/phyt/wechat/images/zhsy_new_bg.jpg) center center no-repeat;padding: 40rpx 0 0 0;background-size: 100%;}
 .banner_top {padding: 0 40rpx;}
 .banner_left {display: inline-block;}
 .banner_left navigator {display: inline-block;float: left;}
