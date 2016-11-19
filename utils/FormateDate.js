@@ -29,6 +29,20 @@ function FormateDate(timestamp ,format){
         return 0;
     }
 }
+
+// 参数的拼接  
+// 参见 index.js
+//  pageSize:1,pageIndex:1 json对象  最终结果  pageSize=1&pageIndex=1 字符串
+function json2Form(json) {  
+    var str = [];  
+    for(var p in json){  
+        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));  
+    }  
+    return str.join("&");  
+}  
+
+
 module.exports = {
-  FormateDate: FormateDate
+    json2Form:json2Form,
+    FormateDate: FormateDate
 }

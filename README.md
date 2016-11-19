@@ -56,3 +56,23 @@
 
 # 20161119 
 资金流水静态页面已经完善
+
+更改了投资列表页面的请求地址方式 data传参已经可以了了，原因是请求网站上面的json的方法是POST content-type不是小程序默认的application/json
+注意 content-type 要小写才可以
+
+wx.request({
+      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso',
+      data:{
+        pageSize:15,
+        pageIndex:1,
+      },
+      method:"POST",
+      header: {
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      success: function(res) {
+        that.setData({
+            investList:res.data.rows,
+          })  
+      }
+    })

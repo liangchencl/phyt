@@ -11,12 +11,20 @@ Page({
     var that = this;
       // console.log(options);
       wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_big_section_list.jso?pageSize=1&pageIndex=1',
-      data: "",
-      method:"POST",
-      header: {
-          'Content-Type': 'application/json'
+      url: 'https://www.phyt88.com/v2/project/obtain_big_section_list.jso',
+      data: {
+        pageSize:1,pageIndex:1
       },
+      
+      // data:s_data.json2Form({
+      //   pageSize:1,pageIndex:1
+      // }),
+
+      header: {
+        // 注意这里的content-type 要小写，
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      method:"POST",
       success: function(res) {
           res.data.rows[0].conSn = res.data.rows[0].conSn.substring(3,10);
           res.data.rows[0].last = res.data.rows[0].conSn.substring(-1,1);
@@ -24,7 +32,7 @@ Page({
           res.data.rows[0].amount = res.data.rows[0].amount.substring(-1,6);
           res.data.rows[0].percent = ((res.data.rows[0].raisedAmount / res.data.rows[0].amount)*100).toFixed(1)
           res.data.rows[0].time = s_data.FormateDate(res.data.rows[0].time,'Y-m-d h:m:s')
-          console.log(res.data.rows)
+          // console.log(res.data.rows)
         that.setData({
             investList:res.data.rows
           })

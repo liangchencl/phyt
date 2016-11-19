@@ -12,11 +12,13 @@ Page({
     //   console.log(that);
     // 商行贷
     wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_big_section_list.jso?pageSize=6&pageIndex=1',
-      data: {},
+      url: 'https://www.phyt88.com/v2/project/obtain_big_section_list.jso',
+      data: {
+        pageSize:6,pageIndex:1
+      },
       method:"POST",
       header: {
-          'Content-Type': 'application/json'
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
       },
       success: function(res) {
         console.log(res.data.rows);
@@ -40,11 +42,13 @@ Page({
     }),
     // 商抵贷
     wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_small_section_list.jso?pageSize=6&pageIndex=1',
-      data:"",
+      url: 'https://www.phyt88.com/v2/project/obtain_small_section_list.jso',
+      data:{
+        pageSize:6,pageIndex:1
+      },
       method:"POST",
       header: {
-          'Content-Type': 'application/json'
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
       },
       success: function(res) {
         console.log(res.data.rows);
@@ -68,11 +72,13 @@ Page({
     }),
     // 商企贷
     wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_brand_section_list.jso?pageSize=6&pageIndex=1',
-      data:"",
+      url: 'https://www.phyt88.com/v2/project/obtain_brand_section_list.jso',
+      data:{
+        pageSize:6,pageIndex:1
+      },
       method:"POST",
       header: {
-          'Content-Type': 'application/json'
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
       },
       success: function(res) {
         console.log(res.data.rows);

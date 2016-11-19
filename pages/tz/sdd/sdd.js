@@ -8,11 +8,15 @@ Page({
     var that = this;
       // console.log(options);
       wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso?pageSize=15&pageIndex=1&sid='+options.sid,
-      data: "sid=" + options.sid,
+      url: 'https://www.phyt88.com/v2/project/obtain_invest_record_by_sid.jso',
+      data:{
+        pageSize:15,
+        pageIndex:1,
+        sid:options.sid
+      },
       method:"POST",
       header: {
-          'Content-Type': 'application/json'
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
       },
       success: function(res) {
         var len=res.data.rows.length;
@@ -28,11 +32,14 @@ Page({
 
     // 商抵贷
     wx.request({
-      url: 'https://www.phyt88.com/v2/project/obtain_small_section_list.jso?pageSize=6&pageIndex=1',
-      data:"",
+      url: 'https://www.phyt88.com/v2/project/obtain_small_section_list.jso',
+      data:{
+        pageSize:6,
+        pageIndex:1
+      },
       method:"POST",
       header: {
-          'Content-Type': 'application/json'
+          "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
       },
       success: function(res) {
         console.log(res.data.rows);
