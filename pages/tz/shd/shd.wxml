@@ -122,11 +122,13 @@
                     <text class="record_right">金额</text>
                 </view>
                 <view class="record_con">
-                    <view wx:for="{{investList}}">
-                        <text class="record_left">{{item.userName}}</text>
-                        <text class="record_center">{{item.time}}</text>
-                        <text class="record_right">{{item.money}}</text>
-                    </view>
+                    <scroll-view>
+                        <view wx:for="{{investList}}">
+                            <text class="record_left">{{item.userName}}</text>
+                            <text class="record_center">{{item.time}}</text>
+                            <text class="record_right">{{item.money}}</text>
+                        </view>
+                    </scroll-view>
                 </view>
             </view>
         </view>

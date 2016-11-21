@@ -12,3 +12,5 @@
 .bd_left {display: inline-block;width: 40%;}
 .bd_center {display: inline-block;width:30%;}
 .bd_right {display: inline-block;width:30%;color: #45ade1;}
+
+.bd_content scroll-view {height: 800rpx;}
