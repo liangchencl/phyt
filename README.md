@@ -80,6 +80,7 @@ wx.request({
 # 20161121
 使用了appid之后报错
 asdebug.js:1  https://www.phyt88.com/v2/project/obtain_big_section_list.jso 不在以下合法域名列表中，请参考文档：https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html
-所有的数据调用不出来，不知道是什么原因(有猜测说是没有认证的原因)。
+所有的数据调用不出来，是在微信后台里面没有配置。目前没有申请到小程序，
 
 但是在本地测试没有appid的时候是可以调出来的。
+
