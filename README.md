@@ -84,3 +84,6 @@ asdebug.js:1  https://www.phyt88.com/v2/project/obtain_big_section_list.jso 不�
 
 但是在本地测试没有appid的时候是可以调出来的。
 
+
+#20161122
+canvas 怎么在同一个页面画两个不同的图呢？
