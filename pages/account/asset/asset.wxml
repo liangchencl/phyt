@@ -1,5 +1,5 @@
-<view>{{text}}</view>
+<view>第一个canvas</view>
 
 <canvas canvas-id="firstCanvas"></canvas>
-<view>{{text}}</view>
+<view>第二个canvas</view>
 <canvas canvas-id="secondCanvas"></canvas>
