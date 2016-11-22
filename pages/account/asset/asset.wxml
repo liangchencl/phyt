@@ -1,1 +1,5 @@
 <view>{{text}}</view>
+
+<canvas canvas-id="firstCanvas"></canvas>
+<view>{{text}}</view>
+<canvas canvas-id="secondCanvas"></canvas>
