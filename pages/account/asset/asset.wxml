@@ -39,5 +39,9 @@
         <view class="left"><icon type="success" size="17" color="#ffaa43"></icon>已抵扣红包</view>
         <view class="right">{{can_23}}</view>
     </view>
+</view>
 
+<view class="footer">
+    <view class="left">累计投资</view>
+    <view class="right">1490300.00(<text>33</text>笔)</view>
 </view>
