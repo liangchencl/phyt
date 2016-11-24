@@ -89,3 +89,6 @@ asdebug.js:1  https://www.phyt88.com/v2/project/obtain_big_section_list.jso 不�
 canvas 怎么在同一个页面画两个不同的canvas呢？
 
 已经可以画多个canvas了了，详情见 账户 --》 总资产 
+
+#20161124
+账户总资产静态页面已经完成，用canvas画的的，注意旋转和移动，然后才开始重绘
