@@ -1,1 +1,9 @@
-canvas {margin:  0 auto;width: 150px;height: 200px;}
+canvas {margin:  0 auto;width: 150px;height: 180px;}
+
+.first {background: #fff;padding: 40rpx;}
+.first_con {width: 70%;margin: 0 auto;font-size: 32rpx;overflow: hidden;line-height: 1.6em;}
+.left {float: left;}
+.left icon {margin-right: 8rpx;vertical-align: sub;}
+.right {float: right;}
+
+.second {background: #fff;padding: 40rpx;margin-top: 20rpx;}

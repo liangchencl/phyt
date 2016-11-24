@@ -1,7 +1,5 @@
 {
   "pages":[
-    
-    
     "pages/index/index",
     "pages/index/newUser/newUser",
     "pages/index/safety/safety",
@@ -41,8 +39,6 @@
     "pages/account/cardBox/jxq/jxqRule/jxqRule",
     "pages/account/cardBox/tyj/tyj"
 
-    
-    
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,8 +1,43 @@
-<view class="zhzzc">账户总资产统计(元)</view>
-<canvas canvas-id="firstCanvas"></canvas>
+<view class="first">
+    <view class="zhzzc">账户总资产统计(元)</view>
+    <canvas canvas-id="firstCanvas"></canvas>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#ff7f6d"></icon>可用余额</view>
+        <view class="right">{{can_01}}</view>
+    </view>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#9ad660"></icon>红包余额</view>
+        <view class="right">{{can_02}}</view>
+    </view>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#ffaa43"></icon>待收本金</view>
+        <view class="right">{{can_03}}</view>
+    </view>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#cd97fe"></icon>待收收益</view>
+        <view class="right">{{can_04}}</view>
+    </view>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#45ade1"></icon>提现中金额</view>
+        <view class="right">{{can_05}}</view>
+    </view>
+</view>
 
+<view class="second">
+    <view>投资收益统计(元)</view>
+    <canvas canvas-id="secondCanvas"></canvas>
 
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#45ade1"></icon>已实收收益</view>
+        <view class="right">{{can_21}}</view>
+    </view>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#9ad660"></icon>待收收益</view>
+        <view class="right">{{can_22}}</view>
+    </view>
+    <view class="first_con">
+        <view class="left"><icon type="success" size="17" color="#ffaa43"></icon>已抵扣红包</view>
+        <view class="right">{{can_23}}</view>
+    </view>
 
-
-<view>投资收益统计(元)</view>
-<canvas canvas-id="secondCanvas"></canvas>
+</view>
