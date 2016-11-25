@@ -15,10 +15,6 @@ Page({
       data: {
         pageSize:1,pageIndex:1
       },
-      
-      // data:s_data.json2Form({
-      //   pageSize:1,pageIndex:1
-      // }),
 
       header: {
         // 注意这里的content-type 要小写，
