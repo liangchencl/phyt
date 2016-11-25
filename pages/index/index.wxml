@@ -2,7 +2,7 @@
 <scroll-view scroll-y="true" >
 <view class="banner">
     <swiper indicator-dots="true" autoplay="false">
-        <block wx:for="{{imgUrl}}">
+        <block wx:for="{{imgUrl}}" wx:key="index">
             <swiper-item>
                 <view class="swiper_img">
                     <navigator url="{{item.url}}"><image src="{{item.img}}"></image></navigator>
@@ -36,9 +36,7 @@
     </view>
 </view>
 
-
-<view class="index_tz"  wx:for="{{investList}}">
-
+<view class="index_tz"  wx:for="{{investList}}" wx:key="index">
     <view class="index_tz_title">
         <navigator url="../tz/shd/shd?sid={{item.id}}">
             商行贷{{item.conSn}}系列之{{item.last}}
