@@ -1,6 +1,6 @@
 <view class="grzx_bd">
     <view class="grzx_con">
-        <navigator url="">
+        <navigator url="#">
             <view class="grzx_con_list">
                 <view class="left">
                     会员等级
@@ -23,7 +23,7 @@
     </view>
 
     <view class="grzx_con">
-        <navigator url="">
+        <navigator url="#">
             <view class="grzx_con_list">
                 <view class="left">
                     手机认证<text>已认证</text>
@@ -42,13 +42,23 @@
                 李** <image src="../../../images/account/arrowright.png"></image>
             </view>
         </view>
-        <view class="grzx_con_list border_none">
+        <view class="grzx_con_list">
             <view class="left">
                 银行卡认证<text>已认证</text>
             </view>
             <view class="right">
                 工商银行
             </view>
+        </view>
+        <view class="grzx_con_list border_none">
+            <navigator url="address/address">
+                <view class="left">
+                    管理收货地址<text>已认证</text>
+                </view>
+                <view class="right">
+                    <image src="../../../images/account/arrowright.png"></image>
+                </view>
+            </navigator>
         </view>
     </view>
 </view>

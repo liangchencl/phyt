@@ -20,6 +20,7 @@
     "pages/account/userShare/userShare",
     "pages/account/userShare/userSharerule/userSharerule",
     "pages/account/grzx/grzx",
+    "pages/account/grzx/address/address",
     "pages/account/grzx/password/password",
     "pages/account/grzx/password/changePassword/changePassword",
     "pages/account/grzx/password/changeSafety/changeSafety",

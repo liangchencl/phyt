@@ -1,0 +1,35 @@
+<picker bindchange="bindPickerChange" value="{{addrValue}}" range="{{array}}">
+    <view class="picker">
+        当前选择：{{addrValue}}
+    </view>
+</picker>
+<view class="picker-content" wx:if="{{showCity}}">
+    <view class="operate">
+        <span class="left" bindtap="cancel">取消</span>
+        <span class="right" bindtap="checkAddr">完成</span>
+    </view>
+    <view class="picker-area">
+        <view class="picker-left">
+            <view>
+                <block wx:for="{{filterdata.addressData.province}}">
+                    <view bindtap="checkProvince" data-index="{{index}}" class="padding {{pi==index ? 'active' : ''}}">{{item.name}}</view>
+                </block>
+            </view>
+        </view>
+        <view class="picker-middle">
+            <view>
+                <block wx:for="{{filterdata.addressData.province[pi].city}}">
+                    <view bindtap="checkCity" data-index="{{index}}" class="padding {{ci==index ? 'city-active' : ''}}">{{item.name}}</view>
+                </block>
+            </view>
+        </view>
+        <view class="picker-right">
+            <view>
+                <block wx:for="{{filterdata.addressData.province[pi].city[ci].area}}">
+                    <view bindtap="checkArea" data-index="{{index}}" class="padding {{ai==index ? 'city-active' : ''}}" >{{item.name}}</view>
+                </block>
+            </view>
+        </view>
+        <view class="clear"></view>
+    </view>
+</view>
