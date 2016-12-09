@@ -104,6 +104,12 @@ Page({
 
   },
   change:function(e){
+
+    // console.log("111111111")
+    // 也可以通过 判断 e.target.id 来进行切换
+    // 在wxmlwxml 页面判断 e.target.id = shd ? 'active_show' : 'active_hide' 是否为真 来看点击的否是当前的一个
+    // console.log(e.target.id)
+
     var type = [
           "shd","sdd","sqd"
       ];

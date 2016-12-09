@@ -25,7 +25,7 @@ Page({
           res.data.rows[0].conSn = res.data.rows[0].conSn.substring(3,10);
           res.data.rows[0].last = res.data.rows[0].conSn.substring(-1,1);
           res.data.rows[0].deadlineStr = res.data.rows[0].deadlineStr.substring(0,1);
-          res.data.rows[0].amount = res.data.rows[0].amount.substring(-1,6);
+          res.data.rows[0].amount = res.data.rows[0].amount;
           res.data.rows[0].percent = ((res.data.rows[0].raisedAmount / res.data.rows[0].amount)*100).toFixed(1)
           res.data.rows[0].time = s_data.FormateDate(res.data.rows[0].time,'Y-m-d h:m:s')
           // console.log(res.data.rows)
