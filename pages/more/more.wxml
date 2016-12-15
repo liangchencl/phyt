@@ -37,7 +37,7 @@
                 </view>
             </view>
 
-            <view class="more_ltem">
+            <view class="more_ltem more_nav">
                 <navigator class="widget" url="news/news">
                     <view class="more_info" id="wechat">
                         <view class="more_info_name">
