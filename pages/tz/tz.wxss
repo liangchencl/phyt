@@ -27,7 +27,8 @@ page {
 .right .right_l text {font-size: 44rpx;}
 
 .right .right_r {display: inline-block;width: 50%;text-align: right;}
-.right .right_r navigator {display: inline-block;font-size: 30rpx;background: #f00;color: #fff;border-radius: 10rpx;padding: 14rpx 10rpx;margin-top: 20rpx;}
+.right .right_r navigator {display: inline-block;font-size: 24rpx;background: #ff723f;color: #fff;border-radius: 10rpx;padding: 16rpx 12rpx;margin-top: 20rpx;}
+.right .right_r navigator.full {background: #c4c4c4;}
 .right .progress {margin-top: 10rpx;}
 
 .show {display: block;}

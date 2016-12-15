@@ -15,7 +15,6 @@ Page({
       data: {
         pageSize:1,pageIndex:1
       },
-
       header: {
         // 注意这里的content-type 要小写，
           "content-type":"application/x-www-form-urlencoded; charset=UTF-8"
@@ -26,7 +25,7 @@ Page({
           res.data.rows[0].last = res.data.rows[0].conSn.substring(-1,1);
           res.data.rows[0].deadlineStr = res.data.rows[0].deadlineStr.substring(0,1);
           res.data.rows[0].amount = res.data.rows[0].amount;
-          res.data.rows[0].percent = ((res.data.rows[0].raisedAmount / res.data.rows[0].amount)*100).toFixed(1)
+          res.data.rows[0].percent = ((res.data.rows[0].raisedAmount / res.data.rows[0].amount)*100).toFixed(0)
           res.data.rows[0].time = s_data.FormateDate(res.data.rows[0].time,'Y-m-d h:m:s')
           // console.log(res.data.rows)
         that.setData({
