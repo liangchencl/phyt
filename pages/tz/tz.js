@@ -109,3 +109,6 @@ Page({
     this.setData(data);
   }
 })
+
+// change  change2 change3 重复了切换代码，在点击事件bindtap里面不能添加两个事件，可以用冒泡机制来实现。
+// 就是在外层再套一个view  然后给一个点击事件，点击change的时候会冒泡，从而触发view上面的事件。
