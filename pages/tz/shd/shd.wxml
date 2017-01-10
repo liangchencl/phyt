@@ -12,7 +12,10 @@
             </view>
             <view class="right">
                 {{item.deadlineStr}}<text></text>
-                <view>
+                <view wx:if="{{item.percent == 100}}">
+                    <progress percent="{{item.percent}}" show-info active color="#ccc" />
+                </view>
+                <view wx:else>
                     <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                 </view>
             </view>
@@ -42,6 +45,19 @@
             </view>
             <view wx:else>
                 额外收益：<text>返利{{item.reward}}(红包)+</text>积分
+            </view>
+        </view>
+
+        <view class="footer_btn">
+            <view wx:if="{{item.percent == 100}}">
+                <!--<navigator url="../invest/invest">-->
+                    <button size="default" type="default" class="full_btn" hover-class="none">立即投资</button>
+                <!--</navigator>-->
+            </view>
+            <view wx:else>
+                <navigator url="../invest/invest">
+                    <button size="default" type="primary" hover-class="none">立即投资</button>
+                </navigator>
             </view>
         </view>
     </view>
@@ -157,8 +173,3 @@
 
 
 
-<view class="footer_btn">
-    <navigator url="../invest/invest">
-        <button size="default" type="primary" hover-class="none">立即投资</button>
-    </navigator>
-</view>

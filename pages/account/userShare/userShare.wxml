@@ -33,5 +33,11 @@
 </view>
 
 <view class="grzx_btn">
-    <button size="default" type="primary" bindtap="change">立即寻找取金人</button>
+    <button size="default" type="primary" bindtap="bindClick">立即寻找取金人</button>
 </view>
+
+<!--<view class="userShare">
+    <view class="shareImg">
+        <image src="../../../images/account/fenxiang.png"></image>
+    </view>
+</view>-->

@@ -24,14 +24,17 @@
                         </view>
 
                         <view class="right_r" wx:if="{{item.percent == 100}}">
-                            <navigator class="full" url="">已经投满</navigator>
+                            <navigator class="full">已经投满</navigator>
                         </view>
                         <view class="right_r" wx:else>
                             <navigator url="invest/invest">开始投资</navigator>
                         </view>
                     
                     </view>
-                    <view class="progress">
+                    <view class="progress" wx:if="{{item.percent == 100}}">
+                        <progress percent="{{item.percent}}" show-info active color="#ccc" />
+                    </view>
+                    <view class="progress" wx:else>
                         <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                     </view>
                 </view>
@@ -55,13 +58,16 @@
                             <view>{{item.amount}}</view>
                         </view>
                         <view class="right_r" wx:if="{{item.percent == 100}}">
-                            <navigator class="full" url="">已经投满</navigator>
+                            <navigator class="full">已经投满</navigator>
                         </view>
                         <view class="right_r" wx:else>
                             <navigator url="invest/invest">开始投资</navigator>
                         </view>
                     </view>
-                    <view class="progress">
+                    <view class="progress" wx:if="{{item.percent == 100}}">
+                        <progress percent="{{item.percent}}" show-info active color="#ccc" />
+                    </view>
+                    <view class="progress" wx:else>
                         <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                     </view>
                 </view>
@@ -85,13 +91,16 @@
                             <view>{{item.amount}}</view>
                         </view>
                         <view class="right_r" wx:if="{{item.percent == 100}}">
-                            <navigator class="full" url="">已经投满</navigator>
+                            <navigator class="full">已经投满</navigator>
                         </view>
                         <view class="right_r" wx:else>
                             <navigator url="invest/invest">开始投资</navigator>
                         </view>
                     </view>
-                    <view class="progress">
+                    <view class="progress" wx:if="{{item.percent == 100}}">
+                        <progress percent="{{item.percent}}" show-info active color="#ccc" />
+                    </view>
+                    <view class="progress" wx:else>
                         <progress percent="{{item.percent}}" show-info active color="#ff723f" />
                     </view>
                 </view>

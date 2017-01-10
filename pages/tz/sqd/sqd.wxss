@@ -43,3 +43,4 @@
 .record_right {width: 30%;}
 
 .footer_btn button {position: fixed;bottom: 0;left: 0;width: 100%;background: #ff5304;color: #fff;}
+.footer_btn button.full_btn {background: #ccc;}
