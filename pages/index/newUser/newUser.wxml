@@ -1,3 +1,7 @@
 <view>{{text}}</view>
 <view>{{shu}}</view>
 <view>{{hh}}</view>
+
+<view>
+    <canvas canvas-id="secondCanvas"></canvas>
+</view>

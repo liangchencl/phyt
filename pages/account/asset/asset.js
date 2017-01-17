@@ -56,22 +56,22 @@ Page({
 
       context.beginPath();
       context.setStrokeStyle("#9ad660")
-			context.arc(75,90,60,2*Math.PI*per_01,2*Math.PI*per_02);
+			context.arc(75,90,60,2*Math.PI*per_01,2*Math.PI*(per_01+per_02));
 			context.stroke();
 
       context.beginPath();
       context.setStrokeStyle("#ffaa43")
-			context.arc(75,90,60,2*Math.PI*(per_01+per_02),2*Math.PI*per_03);
+			context.arc(75,90,60,2*Math.PI*(per_01+per_02),2*Math.PI*(per_01+per_02+per_03));
 			context.stroke();
 
       context.beginPath();
       context.setStrokeStyle("#cd97fe")
-			context.arc(75,90,60,2*Math.PI*(per_01+per_02+per_03),2*Math.PI*per_04);
+			context.arc(75,90,60,2*Math.PI*(per_01+per_02+per_03),2*Math.PI*(per_01+per_02+per_03+per_04));
 			context.stroke();
 
       context.beginPath();
       context.setStrokeStyle("#45ade1")
-			context.arc(75,90,60,2*Math.PI*(per_01+per_02+per_03+per_04),2*Math.PI*per_05);
+			context.arc(75,90,60,2*Math.PI*(per_01+per_02+per_03+per_04),2*Math.PI*(per_01+per_02+per_03+per_04+per_05));
 			context.stroke();
 
       wx.drawCanvas({
@@ -92,11 +92,11 @@ Page({
       context.stroke();
       context.beginPath();
       context.setStrokeStyle("#9ad660")
-			context.arc(75,100,60,1.5*Math.PI*per_21,1.5*Math.PI*per_22);
+			context.arc(75,100,60,1.5*Math.PI*per_21,1.5*Math.PI*(per_21+per_22));
 			context.stroke();
       context.beginPath();
       context.setStrokeStyle("#ffaa43")
-			context.arc(75,100,60,1.5*Math.PI*(per_21+per_22),1.5*Math.PI*per_23);
+			context.arc(75,100,60,1.5*Math.PI*(per_21+per_22),1.5*Math.PI*(per_21+per_22+per_23));
 			context.stroke();
 
       wx.drawCanvas({
