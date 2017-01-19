@@ -84,7 +84,7 @@ Page({
     var data = {};
     data[id + "Show" ] = !this.data[id + "Show" ];
     this.setData(data)
-    // console.log(data)
+    console.log(data)
 
   }
 })

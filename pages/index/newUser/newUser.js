@@ -63,5 +63,7 @@ Page({
         canvasId: "secondCanvas",
         actions: context.getActions()
       })
+
+
   }
 })
